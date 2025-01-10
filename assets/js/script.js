@@ -58,7 +58,11 @@ function renderTable(page) {
             ${page === 'redeem'
                 ? `${item.Offer_Title}`
                 : `${page === 'index'
-                    ? `<a href="update-mistri.html"><button class="btn btn-primary" ><i class="ri-file-edit-fill"></i></button></a> <button class="btn btn-danger"><i class="ri-delete-bin-2-fill"></i></button>`
+                    ? `<div class="d-flex justify-content-evenly">
+                            <a href="update-mistri.html"><button class="btn btn-primary" ><i class="ri-file-edit-fill"></i></button></a>
+                            <a href="/"><button class="btn btn-danger"><i class="ri-delete-bin-2-fill"></i></button></a>
+                      </div`
+
                     : page === 'point'
                         ? `<button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#verticalycentered"><i class="ri-add-circle-fill"></i></button>`
                         : page === 'withdraw'
@@ -69,8 +73,10 @@ function renderTable(page) {
         </td>
         <td>
             ${page === 'redeem'
-                ? ` <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#AcceptModel">Accept</button></a> 
-                     <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#DeniedModel">Denied</button>`
+                ? ` <div class="d-flex justify-content-evenly">
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#AcceptModel">Accept</button></a> 
+                        <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#DeniedModel">Denied</button>
+                    </div>`
                 : page === 'withdraw'
                     ? `${item.randomDate}`
                     : ``
