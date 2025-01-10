@@ -202,21 +202,16 @@
         </section>
         <div class="modal fade" id="AcceptModel" tabindex="-1">
             <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content rewardPointModel">
-                    <div class="modal-header">
-                        <h5 class="modal-title">Reward Point</h5>
-                        <span class="ms-auto" data-bs-dismiss="modal" aria-label="Close"><i class=" bx bx-x"></i></span>
-                        <!-- <button type="button" class="btn-close closeButton" data-bs-dismiss="modal" aria-label="Close" style="color: white;"></button> -->
-                    </div>
-                    <div class="modal-body ">
-                        <div class="col-12">
-                            <label for="rewardpoint1" class="form-label">ADD POINT</label>
-                            <input type="number" class="form-control" id="rewardpoint1">
+                <div class="modal-content AcceptModel">
+                    <div class="modal-body">
+                        <div class="icon ">
+                            <i class="bi bi-check-circle"></i>
                         </div>
+                        <h2 class="text-center fw-bolder pt-3">Are You Sure?</h2>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-warning fw-bold">Save changes</button>
-                        <button type="button" class="btn btn-warning fw-bold">Save changes</button>
+                        <button type="button" class="btn btn-success fw-bold">Yes</button>
+                        <button type="button" class="btn btn-danger fw-bold " data-bs-dismiss="modal">No</button>
                     </div>
                 </div>
             </div>
@@ -224,20 +219,15 @@
         <div class="modal fade" id="DeniedModel" tabindex="-1">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content deniedModel">
-                    <div class="modal-header">
-                        <h5 class="modal-title">Reward Point</h5>
-                        <span class="ms-auto" data-bs-dismiss="modal" aria-label="Close"><i class=" bx bx-x"></i></span>
-                        <!-- <button type="button" class="btn-close closeButton" data-bs-dismiss="modal" aria-label="Close" style="color: white;"></button> -->
-                    </div>
-                    <div class="modal-body ">
-                        <div class="icon">
+                    <div class="modal-body">
+                        <div class="icon ">
                             <i class="bi bi-x-circle"></i>
-
                         </div>
+                        <h2 class="text-center fw-bolder pt-3">Are You Sure?</h2>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-success fw-bold">Yes</button>
-                        <button type="button" class="btn btn-danger fw-bold">No</button>
+                        <button type="button" class="btn btn-danger fw-bold " data-bs-dismiss="modal">No</button>
                     </div>
                 </div>
             </div>

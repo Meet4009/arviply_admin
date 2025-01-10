@@ -40,7 +40,7 @@
   ======================================================== -->
 </head>
 
-<body onload="onPageLoad('poster')">
+<body>
 
     <!-- ======= Header ======= -->
     <header id="header" class="header fixed-top d-flex align-items-center">
@@ -223,7 +223,7 @@
                                         <td>Screw</td>
                                         <td>10</td>
                                         <td><button class="btn btn-danger" data-bs-toggle="modal"
-                                                data-bs-target="#DeniedModel">Denied</button></td>
+                                                data-bs-target="#DeniedModel">Delete</button></td>
                                     </tr>
                                     <tr>
                                         <td>2</td>
@@ -231,7 +231,7 @@
                                         <td>Spring</td>
                                         <td>23</td>
                                         <td><button class="btn btn-danger" data-bs-toggle="modal"
-                                                data-bs-target="#DeniedModel">Denied</button></td>
+                                                data-bs-target="#DeniedModel">Delete</button></td>
                                     </tr>
                                     <tr>
                                         <td>3</td>
@@ -239,7 +239,7 @@
                                         <td>Saw</td>
                                         <td>25</td>
                                         <td><button class="btn btn-danger" data-bs-toggle="modal"
-                                                data-bs-target="#DeniedModel">Denied</button></td>
+                                                data-bs-target="#DeniedModel">Delete</button></td>
                                     </tr>
                                     <tr>
                                         <td>4</td>
@@ -247,7 +247,7 @@
                                         <td>Screw</td>
                                         <td>16</td>
                                         <td><button class="btn btn-danger" data-bs-toggle="modal"
-                                                data-bs-target="#DeniedModel">Denied</button></td>
+                                                data-bs-target="#DeniedModel">Delete</button></td>
                                     </tr>
                                     <tr>
                                         <td>5</td>
@@ -255,7 +255,7 @@
                                         <td>Hammer</td>
                                         <td>20</td>
                                         <td><button class="btn btn-danger" data-bs-toggle="modal"
-                                                data-bs-target="#DeniedModel">Denied</button></td>
+                                                data-bs-target="#DeniedModel">Delete</button></td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -264,44 +264,18 @@
                 </div>
             </div><!-- End Top Selling -->
         </section>
-        <div class="modal fade" id="AcceptModel" tabindex="-1">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content rewardPointModel">
-                    <div class="modal-header">
-                        <h5 class="modal-title">Reward Point</h5>
-                        <span class="ms-auto" data-bs-dismiss="modal" aria-label="Close"><i class=" bx bx-x"></i></span>
-                        <!-- <button type="button" class="btn-close closeButton" data-bs-dismiss="modal" aria-label="Close" style="color: white;"></button> -->
-                    </div>
-                    <div class="modal-body ">
-                        <div class="col-12">
-                            <label for="rewardpoint1" class="form-label">ADD POINT</label>
-                            <input type="number" class="form-control" id="rewardpoint1">
-                        </div>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-warning fw-bold">Save changes</button>
-                        <button type="button" class="btn btn-warning fw-bold">Save changes</button>
-                    </div>
-                </div>
-            </div>
-        </div><!-- Reward Point Modal-->
         <div class="modal fade" id="DeniedModel" tabindex="-1">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content deniedModel">
-                    <div class="modal-header">
-                        <h5 class="modal-title">Reward Point</h5>
-                        <span class="ms-auto" data-bs-dismiss="modal" aria-label="Close"><i class=" bx bx-x"></i></span>
-                        <!-- <button type="button" class="btn-close closeButton" data-bs-dismiss="modal" aria-label="Close" style="color: white;"></button> -->
-                    </div>
-                    <div class="modal-body ">
-                        <div class="icon">
+                    <div class="modal-body">
+                        <div class="icon ">
                             <i class="bi bi-x-circle"></i>
-
                         </div>
+                        <h2 class="text-center fw-bolder pt-3">Are You Sure?</h2>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-success fw-bold">Yes</button>
-                        <button type="button" class="btn btn-danger fw-bold">No</button>
+                        <button type="button" class="btn btn-danger fw-bold " data-bs-dismiss="modal">No</button>
                     </div>
                 </div>
             </div>
@@ -326,12 +300,7 @@
 
     <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
             class="bi bi-arrow-up-short"></i></a>
-    <script>
-        function onPageLoad(index) {
-            console.log("Initializing table on page refresh...");
-            updateTable(index); // Initialize the table with pagination and data
-        }
-    </script>
+
 
 
     <!-- Vendor JS Files -->

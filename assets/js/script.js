@@ -59,12 +59,12 @@ function renderTable(page) {
                 ? `${item.Offer_Title}`
                 : `${page === 'index'
                     ? `<div class="d-flex justify-content-evenly">
-                            <a href="update-mistri.html"><button class="btn btn-primary" ><i class="ri-file-edit-fill"></i></button></a>
-                            <a href="/"><button class="btn btn-danger"><i class="ri-delete-bin-2-fill"></i></button></a>
+                            <a href="update-mistri.html"><button class="btn btn-primary" >Edit</button></a>
+                            <a href="#"><button class="btn btn-danger">Delete</i></button></a>
                       </div`
 
                     : page === 'point'
-                        ? `<button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#verticalycentered"><i class="ri-add-circle-fill"></i></button>`
+                        ? `<button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#verticalycentered"><i class="ri-add-circle-fill"></i> Add Point</button>`
                         : page === 'withdraw'
                             ? `${item.Offer_Title}`
                             : ``

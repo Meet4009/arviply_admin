@@ -40,7 +40,7 @@
   ======================================================== -->
 </head>
 
-<body onload="onPageLoad('poster')">
+<body>
 
     <!-- ======= Header ======= -->
     <header id="header" class="header fixed-top d-flex align-items-center">
@@ -172,7 +172,7 @@
 
                         <div class="text-center">
 
-                            <input class="btn btn-success py-3 px-5 mb-3" type="submit">
+                            <input class="btn btn-success py-3 px-5 mb-3 fs-4 fw-bold" type="submit" value="save">
                         </div>
                     </div>
                 </div>
@@ -188,7 +188,7 @@
                         </div>
                         <div class="text-center">
 
-                            <input class="btn btn-success py-3 px-5 mb-3" type="submit">
+                            <input class="btn btn-success py-3 px-5 mb-3 fs-4 fw-bold" type="submit" value="save">
                         </div>
                     </div>
                 </div>
@@ -205,7 +205,7 @@
 
                         <div class="text-center">
                             <!-- Horizontal Form -->
-                            <input class="btn btn-success py-3 px-5 mb-3" type="submit">
+                            <input class="btn btn-success py-3 px-5 mb-3 fs-4 fw-bold" type="submit" value="save">
                         </div>
                     </div>
                 </div>
@@ -213,48 +213,6 @@
 
 
         </section>
-        <div class="modal fade" id="AcceptModel" tabindex="-1">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content rewardPointModel">
-                    <div class="modal-header">
-                        <h5 class="modal-title">Reward Point</h5>
-                        <span class="ms-auto" data-bs-dismiss="modal" aria-label="Close"><i class=" bx bx-x"></i></span>
-                        <!-- <button type="button" class="btn-close closeButton" data-bs-dismiss="modal" aria-label="Close" style="color: white;"></button> -->
-                    </div>
-                    <div class="modal-body ">
-                        <div class="col-12">
-                            <label for="rewardpoint1" class="form-label">ADD POINT</label>
-                            <input type="number" class="form-control" id="rewardpoint1">
-                        </div>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-warning fw-bold">Save changes</button>
-                        <button type="button" class="btn btn-warning fw-bold">Save changes</button>
-                    </div>
-                </div>
-            </div>
-        </div><!-- Reward Point Modal-->
-        <div class="modal fade" id="DeniedModel" tabindex="-1">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content deniedModel">
-                    <div class="modal-header">
-                        <h5 class="modal-title">Reward Point</h5>
-                        <span class="ms-auto" data-bs-dismiss="modal" aria-label="Close"><i class=" bx bx-x"></i></span>
-                        <!-- <button type="button" class="btn-close closeButton" data-bs-dismiss="modal" aria-label="Close" style="color: white;"></button> -->
-                    </div>
-                    <div class="modal-body ">
-                        <div class="icon">
-                            <i class="bi bi-x-circle"></i>
-
-                        </div>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-success fw-bold">Yes</button>
-                        <button type="button" class="btn btn-danger fw-bold">No</button>
-                    </div>
-                </div>
-            </div>
-        </div><!-- Reward Point Modal-->
 
 
     </main><!-- End #main -->
@@ -275,12 +233,7 @@
 
     <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
             class="bi bi-arrow-up-short"></i></a>
-    <script>
-        function onPageLoad(index) {
-            console.log("Initializing table on page refresh...");
-            updateTable(index); // Initialize the table with pagination and data
-        }
-    </script>
+
 
 
     <!-- Vendor JS Files -->
