@@ -54,7 +54,7 @@ function renderTable(page) {
         <td>${item.id}</td>
         <td>${item.name}</td>
         <td>${item.rewardPoints}</td>
-        <td>
+        <td class="d-flex justify-content-center">
             ${page === 'redeem'
                 ? `${item.Offer_Title}`
                 : `${page === 'index'
@@ -67,7 +67,7 @@ function renderTable(page) {
                 }`
             }
         </td>
-        <td>
+        <td class="">
             ${page === 'redeem'
                 ? ` <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#AcceptModel">Accept</button></a> 
                      <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#DeniedModel">Denied</button>`
