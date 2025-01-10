@@ -16,7 +16,7 @@
     <!-- Google Fonts -->
     <link href="https://fonts.gstatic.com" rel="preconnect">
     <link
-        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i"
         rel="stylesheet">
 
     <!-- Vendor CSS Files -->
@@ -29,7 +29,7 @@
     <link href="assets/vendor/simple-datatables/style.css" rel="stylesheet">
 
     <!-- Template Main CSS File -->
-     <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
 
     <!-- =======================================================
   * Template Name: NiceAdmin
@@ -40,7 +40,7 @@
   ======================================================== -->
 </head>
 
-<body>
+<body onload="onPageLoad('poster')">
 
     <!-- ======= Header ======= -->
     <header id="header" class="header fixed-top d-flex align-items-center">
@@ -52,12 +52,7 @@
             <i class="bi bi-list toggle-sidebar-btn"></i>
         </div><!-- End Logo -->
 
-        <div class="search-bar ">
-            <form class="search-form d-flex align-items-center" method="POST" action="#">
-                <input type="text" name="query" placeholder="Search" title="Enter search keyword">
-                <button type="submit" title="Search"><i class="bi bi-search"></i></button>
-            </form>
-        </div><!-- End Search Bar -->
+
 
         <nav class="header-nav ms-auto">
             <ul class="d-flex align-items-center">
@@ -109,8 +104,8 @@
         <ul class="sidebar-nav" id="sidebar-nav">
 
             <li class="nav-item">
-                <a class="nav-link" href="index.html">
-                    <i class="bi bi-grid"></i>
+                <a class="nav-link collapsed" href="index.html">
+                    <i class="bi bi-info-circle"></i>
                     <span>Mistri Information</span>
                 </a>
             </li><!-- End Dashboard Nav -->
@@ -118,35 +113,35 @@
 
             <li class="nav-item">
                 <a class="nav-link collapsed" href="rewardPoint.html">
-                    <i class="bi bi-person"></i>
+                    <i class="bi bi-trophy"></i>
                     <span>Reward Point Management</span>
                 </a>
             </li><!-- End Reward Point Management Page Nav -->
 
             <li class="nav-item">
                 <a class="nav-link collapsed" href="redeemRequest.html">
-                    <i class="bi bi-question-circle"></i>
+                    <i class="bi bi-arrow-repeat"></i>
                     <span>Redeem Request</span>
                 </a>
             </li><!-- End Redeem Request Page Nav -->
 
             <li class="nav-item">
                 <a class="nav-link collapsed" href="withdrawPointHistory.html">
-                    <i class="bi bi-envelope"></i>
+                    <i class="bi bi-clock-history"></i>
                     <span>Withdraw Point History</span>
                 </a>
             </li><!-- End Withdraw Point History Page Nav -->
 
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="offerPosterMaker.html">
-                    <i class="bi bi-card-list"></i>
+            <li class="nav-item ">
+                <a class="nav-link  collapsed" href="offerPosterMaker.html">
+                    <i class="bi bi-file-earmark-post"></i>
                     <span>Offer Poster Maker</span>
                 </a>
             </li><!-- End Offer Poster Maker Page Nav -->
 
             <li class="nav-item">
-                <a class="nav-link collapsed" href="carouselControl.html">
-                    <i class="bi bi-box-arrow-in-right"></i>
+                <a class="nav-link " href="carouselControl.html">
+                    <i class="bi bi-sliders"></i>
                     <span>Carousel Control</span>
                 </a>
             </li><!-- End Carousel Control Page Nav -->
@@ -158,108 +153,109 @@
     <main id="main" class="main">
 
         <div class="pagetitle py-3 ">
-            <h1>Mistri Information</h1>
+            <h1>withdraw Point History</h1>
         </div><!-- End Page Title -->
 
-
-
-
-
-        <section class="section ">
+        <section class="section border border-0 rounded-5">
             <div class="row">
-                <div class="col-lg-12">
+                <div class="col">
+                    
+                    <div class="card mb-3 p-3">
 
-                    <div class="card rounded-3">
-                        <div class="card-body">
-                            <h5 class="card-title">Horizontal Form</h5>
+                        <input type="file" id="fileInput" style="display: none;">
+                        <img src="assets/img/plus.jpg" class="img-fluid rounded " alt="..."
+                            onclick="document.getElementById('fileInput').click();">
 
+                        <div class="card-body text-center pb-0">
+                            <h1 class="card-title fs-3 ">1.First Carousel</h1>
+                        </div>
+
+                        <div class="text-center">
+                           
+                            <input class="btn btn-success py-3 px-5 mb-3" type="submit">
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                 
+                    <div class="card mb-3 p-3">
+
+                        <input type="file" id="fileInput" style="display: none;">
+                        <img src="assets/img/plus.jpg" class="img-fluid rounded " alt="..."
+                            onclick="document.getElementById('fileInput').click();">
+                        <div class="card-body text-center pb-0">
+                            <h1 class="card-title fs-3 ">2.Second Carousel</h1>
+                        </div>
+                        <div class="text-center">
+                         
+                            <input class="btn btn-success py-3 px-5 mb-3" type="submit">
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                  
+                    <div class="card mb-3 p-3">
+                        <input type="file" id="fileInput" style="display: none;">
+                        <img src="assets/img/plus.jpg" class="img-fluid rounded " alt="..."
+                            onclick="document.getElementById('fileInput').click();">
+
+                        <div class="card-body text-center pb-0">
+                            <h1 class="card-title fs-3 ">3.Third Carousel</h1>
+                        </div>
+
+                        <div class="text-center">
                             <!-- Horizontal Form -->
-                            <form>
-                                <div class="row mb-3">
-                                    <label for="inputEmail3" class="col-sm-2 col-form-label">Your Name</label>
-                                    <div class="col-sm-10">
-                                        <input type="text" class="form-control" id="inputText">
-                                    </div>
-                                </div>
-                                <div class="row mb-3">
-                                    <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
-                                    <div class="col-sm-10">
-                                        <input type="email" class="form-control" id="inputEmail">
-                                    </div>
-                                </div>
-                                <div class="row mb-3">
-                                    <label for="inputMonileNO13" class="col-sm-2 col-form-label">Mobile No</label>
-                                    <div class="col-sm-10">
-                                        <input type="number" class="form-control" id="inputMonileNO">
-                                    </div>
-                                </div>
-                                <div class="row mb-3">
-                                    <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
-                                    <div class="col-sm-10">
-                                        <input type="password" class="form-control" id="inputPassword">
-                                    </div>
-                                </div>
+                            <input class="btn btn-success py-3 px-5 mb-3" type="submit">
+                        </div>
+                    </div>
+                </div>
+            </div><!-- End Card with an image on left -->
 
-                                <div class="row ">
-                                    <div class="col-sm-5 col-12 offset-sm-2">
-                                        <div class="d-grid  ">
-                                            <button class="btn btn-success" type="submit">Save</button>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-5 col-12 ">
-                                        <div class="d-grid  ">
-                                            <button type="reset" class="btn btn-secondary">Reset</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </form><!-- End Horizontal Form -->
+
+        </section>
+        <div class="modal fade" id="AcceptModel" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content rewardPointModel">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Reward Point</h5>
+                        <span class="ms-auto" data-bs-dismiss="modal" aria-label="Close"><i class=" bx bx-x"></i></span>
+                        <!-- <button type="button" class="btn-close closeButton" data-bs-dismiss="modal" aria-label="Close" style="color: white;"></button> -->
+                    </div>
+                    <div class="modal-body ">
+                        <div class="col-12">
+                            <label for="rewardpoint1" class="form-label">ADD POINT</label>
+                            <input type="number" class="form-control" id="rewardpoint1">
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-warning fw-bold">Save changes</button>
+                        <button type="button" class="btn btn-warning fw-bold">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div><!-- Reward Point Modal-->
+        <div class="modal fade" id="DeniedModel" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content deniedModel">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Reward Point</h5>
+                        <span class="ms-auto" data-bs-dismiss="modal" aria-label="Close"><i class=" bx bx-x"></i></span>
+                        <!-- <button type="button" class="btn-close closeButton" data-bs-dismiss="modal" aria-label="Close" style="color: white;"></button> -->
+                    </div>
+                    <div class="modal-body ">
+                        <div class="icon">
+                            <i class="bi bi-x-circle"></i>
 
                         </div>
                     </div>
-
-                </div>
-                <div class="col-lg-12">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Vertical Form</h5>
-
-                            <!-- Vertical Form -->
-                            <form class="row g-3">
-                                <div class="col-12">
-                                    <label for="inputNanme4" class="form-label">Your Name</label>
-                                    <input type="text" class="form-control" id="inputNanme4">
-                                </div>
-                                <div class="col-12">
-                                    <label for="inputEmail4" class="form-label">Email</label>
-                                    <input type="email" class="form-control" id="inputEmail4">
-                                </div>
-                                <div class="col-12">
-                                    <label for="inputPassword4" class="form-label">Password</label>
-                                    <input type="password" class="form-control" id="inputPassword4">
-                                </div>
-                                <div class="col-12">
-                                    <label for="inputAddress" class="form-label">Address</label>
-                                    <input type="text" class="form-control" id="inputAddress"
-                                        placeholder="1234 Main St">
-                                </div>
-                                <div class="col-sm-6 col-12 ">
-                                    <div class="d-grid  ">
-                                        <button class="btn btn-success" type="submit">Save</button>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6 col-12 ">
-                                    <div class="d-grid  ">
-                                        <button type="reset" class="btn btn-secondary">Reset</button>
-                                    </div>
-                                </div>
-                        
-                        </form><!-- Vertical Form -->
-
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-success fw-bold">Yes</button>
+                        <button type="button" class="btn btn-danger fw-bold">No</button>
                     </div>
                 </div>
             </div>
-            </div>
-        </section>
+        </div><!-- Reward Point Modal-->
+
 
     </main><!-- End #main -->
 
@@ -279,6 +275,13 @@
 
     <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
             class="bi bi-arrow-up-short"></i></a>
+    <script>
+        function onPageLoad(index) {
+            console.log("Initializing table on page refresh...");
+            updateTable(index); // Initialize the table with pagination and data
+        }
+    </script>
+
 
     <!-- Vendor JS Files -->
     <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
@@ -289,6 +292,7 @@
     <script src="assets/vendor/simple-datatables/simple-datatables.js"></script>
     <script src="assets/vendor/tinymce/tinymce.min.js"></script>
     <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/js/script.js"></script>
 
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
