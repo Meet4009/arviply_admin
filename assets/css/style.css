@@ -66,6 +66,9 @@ h6 {
     font-weight: 600;
     color: #012970;
 }
+@media (max-width:768px) {
+    .pagetitle h1 { text-align: center;}   
+}
 
 /*--------------------------------------------------------------
   # Back to top button
@@ -388,6 +391,12 @@ h6 {
     padding-left: 10px;
     cursor: pointer;
     color: #ffffff;
+}
+
+@media (min-width:1199px) {
+    .header .toggle-sidebar-btn {
+        display: none;
+    }
 }
 
 .header .search-bar {
