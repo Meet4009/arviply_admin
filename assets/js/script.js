@@ -74,8 +74,8 @@ function renderTable(page) {
         <td>
             ${page === 'redeem'
                 ? ` <div class="d-flex justify-content-evenly">
-                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#AcceptModel">Accept</button></a> 
-                        <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#DeniedModel">Denied</button>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#AcceptModel">Yes</button></a> 
+                        <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#DeniedModel">No</button>
                     </div>`
                 : page === 'withdraw'
                     ? `${item.randomDate}`
