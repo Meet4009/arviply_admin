@@ -1342,7 +1342,6 @@ h6 {
     color: #ffffff;
 }
 
-
 @media (max-width: 768px) {
     .login {
         background-color: #056358;
@@ -1355,6 +1354,13 @@ h6 {
         margin: 0;
     }
 }
+
+.login input:focus {
+    outline: 2px solid #ffffff; 
+    border: 1px solid #797676; 
+    box-shadow: 0 0 10px #ffffff80; 
+  }
+
 
 .bg-image {
     background-image: url(/assets/img/destop.jpg);

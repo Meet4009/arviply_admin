@@ -3,6 +3,7 @@ const title = ["Saw", "Hammer", "Spring", "Screw"];
 const startDate = "2025-01-01"; // Start date
 const endDate = Date.now();   // End date
 
+
 // Sample data for the table
 const data = Array.from({ length: 50 }, (_, i) => ({
     id: i + 1,
@@ -10,7 +11,7 @@ const data = Array.from({ length: 50 }, (_, i) => ({
     Offer_Title: title[Math.floor(Math.random() * title.length)],
     rewardPoints: Math.floor(Math.random() * 50) + 5,
     randomDate: getRandomDate(startDate, endDate),
-
+    
 }));
 
 function getRandomDate(startDate, endDate) {
@@ -130,3 +131,15 @@ function filterData(data) {
 }
 
 // Initial rendering
+
+function login(){
+    const email = document.getElementById("inputEmail").value
+    const password = document.getElementById("inputPassword").value
+    const emailid = "admin@gmail.com"
+    const passWord = "admin123";
+    if(emailid === email && passWord === password){
+        window.location.href = "index.html";
+    }else{
+        alert("Invalid credentials")
+    }
+}
