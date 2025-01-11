@@ -1371,7 +1371,8 @@ h6 {
         background-image: url(/assets/img/destop.jpg);
         background-repeat: no-repeat;
         position: relative;
-        height:50vh;
+        /* background-size:contain; */
+        height: 40vh;
         filter: brightness(50%) ;
     }
     
