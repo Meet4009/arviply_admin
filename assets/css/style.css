@@ -1371,17 +1371,17 @@ h6 {
         background-image: url(/assets/img/destop.jpg);
         background-repeat: no-repeat;
         position: relative;
-        /* background-size:contain; */
         height: 40vh;
-        filter: brightness(50%) ;
+        
     }
     
     .bg-logo{
         display: block;
         position: absolute;
         top:40% ;
-        left: 25%;
-        filter: brightness(100%) ;
+        left: 20%;
+        z-index: 10;
         width: 250px;
+        
     }
 }
