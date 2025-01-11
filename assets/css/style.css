@@ -1334,26 +1334,29 @@ h6 {
     background-color: #056358;
     height: 100vh;
 }
-.login .main-logo{
+.login .main-logo {
     margin: 48px auto 0 auto;
 }
 
+.login input::placeholder {
+    color: #ffffff;
+}
 
-@media (max-width:768px){
+
+@media (max-width: 768px) {
     .login {
         background-color: #056358;
         height: auto;
     }
-    .login .main-logo{
-       display: none;
+    .login .main-logo {
+        display: none;
     }
-    .login .title{
+    .login .title {
         margin: 0;
     }
-
 }
 
-.bg-image{
+.bg-image {
     background-image: url(/assets/img/destop.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -1362,28 +1365,25 @@ h6 {
     height: 100vh;
 }
 
-.bg-logo{
+.bg-logo {
     display: none;
 }
 
-@media (max-width:768px) {
-    .bg-image{
+@media (max-width: 768px) {
+    .bg-image {
         background-image: url(/assets/img/destop-50.jpg);
-        
+
         background-repeat: no-repeat;
         position: relative;
         height: 40vh;
-        
     }
-    
-    .bg-logo{
-       
+
+    .bg-logo {
         display: block;
         position: absolute;
-        top:40% ;
+        top: 40%;
         left: 20%;
         z-index: 10;
         width: 250px;
-        
     }
 }
