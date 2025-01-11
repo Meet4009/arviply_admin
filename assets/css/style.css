@@ -1368,7 +1368,8 @@ h6 {
 
 @media (max-width:768px) {
     .bg-image{
-        background-image: url(/assets/img/destop.jpg);
+        background-image: url(/assets/img/destop-50.jpg);
+        
         background-repeat: no-repeat;
         position: relative;
         height: 40vh;
@@ -1376,6 +1377,7 @@ h6 {
     }
     
     .bg-logo{
+       
         display: block;
         position: absolute;
         top:40% ;
